@@ -1,3 +1,12 @@
+
+def create_user(user_id, pin, balance=0, transaction_history=[]):
+  return {
+      "user_id": user_id,
+      "pin": pin,
+      "balance": balance,
+      "transaction_history": transaction_history
+  }
+
 def authenticate(user_data, entered_pin):    
   return user_data["pin"] == entered_pin
 
